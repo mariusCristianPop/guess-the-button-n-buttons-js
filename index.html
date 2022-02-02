@@ -10,14 +10,13 @@
     <center>
         <h1>Guess the button - N buttons</h1>
         <br>
-        <form>
+        <div id = "inputField">
             <label>Please insert a number from 3 to 999:</label>
-            <input required type="number" id="buttonsNr" min="3" max="999">
+            <input id="buttonsNr" required type="number"  min="3" max="999">
             <label>and press</label>
-            <button id="submitButton" type="submit" value="Submit" onclick="validateEntry()">Submit</button>
-        </form>
+            <input id="submitButton" type="submit" value="Submit" onclick="createButtons()">Submit</button>
+        </div>
         <!-- When clicking submit the data inserted is validated. Or it can be hidden until a number bigger than 2 is written in the field -->
-
         <!-- After the number inserted is validated a div appears where all the buttons are shown -->
         <div id="buttonsList">
             <!-- a lot of buttons here -->
