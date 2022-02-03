@@ -25,9 +25,9 @@ function drawWinner(userInsertedNr) {
 // Check if the user clicked on the winning button
 function checkWinner(x) {
     if (x == winner) {
-       showResult(1);
+       showResult("You clicked the lucky button!");
     } else {
-        showResult(0);
+        showResult("You missed! Refresh the page and try again!");
     }
 }
 
@@ -36,10 +36,10 @@ function showResult(parameter) {
     divElem.setAttribute('style', 'text-align:center;');
     divElem.setAttribute('name', 'resultDiv');
     if (parameter == 1) {
-        var textNode = document.createTextNode("You clicked the lucky button!");
+        var textNode = document.createTextNode(parameter);
         hideButtons();
     } else {
-        var textNode = document.createTextNode("You missed!");
+        var textNode = document.createTextNode(parameter);
         hideButtons(); 
     }
     divElem.appendChild(textNode);
