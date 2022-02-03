@@ -35,13 +35,8 @@ function showResult(parameter) {
     var divElem = document.createElement('p');
     divElem.setAttribute('style', 'text-align:center;');
     divElem.setAttribute('name', 'resultDiv');
-    if (parameter == 1) {
-        var textNode = document.createTextNode(parameter);
-        hideButtons();
-    } else {
-        var textNode = document.createTextNode(parameter);
-        hideButtons(); 
-    }
+    var textNode = document.createTextNode(parameter);
+    hideButtons(); 
     divElem.appendChild(textNode);
     document.body.appendChild(divElem);
          
